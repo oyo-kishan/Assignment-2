@@ -4,6 +4,7 @@ import "../App.css";
 import { useSelector } from "react-redux";
 import Input from "../components/Input";
 import Table from '../components/Table';
+import Button from "../components/Button";
 
 function MovieTable() {
   const data = useSelector((state) => state.movieData);
@@ -28,7 +29,11 @@ function MovieTable() {
       />
 
       <Link to="/AddMovie">
-        <button className="addMovieButton">ADD MOVIE</button>
+        <Button 
+           className="addMovieButton"
+           title="ADD MOVIE"
+           onClick={()=>{}}
+        />
       </Link>
     </div>
   );

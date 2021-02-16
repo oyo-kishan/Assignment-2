@@ -4,6 +4,7 @@ import addMovies from "../actions/Action";
 import { useDispatch } from "react-redux";
 import Input from "../components/Input";
 import Dropdown from "../components/Dropdown";
+import Button from "../components/Button";
 
 function AddMovie() {
   
@@ -31,7 +32,7 @@ function AddMovie() {
 
 
   return (
-    <form onSubmit={submitMovie} className="addMovieForm">
+    <form  className="addMovieForm">
       <Input 
           className="inputField" 
           type="text" 
@@ -42,7 +43,7 @@ function AddMovie() {
 
       <Input
         className="inputField"
-        type="text"
+        type="number"
         name="year"
         placeholder="Year"
         onChange={(value) => setMovieYear(value)}
@@ -71,9 +72,11 @@ function AddMovie() {
         onChange={(value) => setMovieRating(value)}
       />
 
-      <button className="addMovieButton" type="submit" value="submit">
-        Add Movie
-      </button>
+      <Button 
+         onClick={(e)=>submitMovie(e)}
+         className="addMovieButton"
+         title="Add Movie"
+      />
 
     </form>
   );
