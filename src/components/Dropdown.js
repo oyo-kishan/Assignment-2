@@ -10,10 +10,9 @@ function Dropdown(props) {
         className={props.className}
         value={props.movieGenre}
         onChange={(e) => props.onChange(e.target.value)}>
-          
-        <option value="Select genre" selected disabled>Select Genre</option>
+        <option value={props.title} disabled>{props.title}</option>
         {
-        list.map((option) => (<option value={option}>{option}</option>))
+        list.map((option,index) => (<option key={index} value={option}>{option}</option>))
         }
       </select>
       <br />

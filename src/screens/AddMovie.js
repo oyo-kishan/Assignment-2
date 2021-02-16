@@ -24,12 +24,11 @@ function AddMovie() {
         genre: movieGenre,
         description: movieDescripiton,
         rating: movieRating,
+        id:  movieName.toString().concat(movieRating).concat(movieGenre.toString())
       })
     );
     alert("Movies added to store successfully");
   }
-
-
 
   return (
     <form  className="addMovieForm">
@@ -53,6 +52,7 @@ function AddMovie() {
         className="inputField"
         value={movieGenre}
         onChange={(value) => setMovieGenre(value)}
+        title="Select Genre"
         options={["Comedy","Action","Drama","Mystery","Horror"]}
       />
 

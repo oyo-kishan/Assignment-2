@@ -4,4 +4,13 @@ const addMovies=(data)=>{
         payload:data
     }
 }
-export default addMovies;
+
+export const deleteMovies=(id)=>{
+    console.log("delete movie called");
+    return{
+        type : "DELETE_MOVIE",
+        payload : id
+    }
+}
+
+export  default addMovies;
