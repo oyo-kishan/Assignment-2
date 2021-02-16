@@ -7,13 +7,7 @@ function Table(props) {
   return (
       <table className={props.className}>
         <tbody>
-                <tr>
-                   {
-                       headingList.map((heading)=>{
-                           return <th>{heading}</th>
-                       })
-                   }
-                </tr>
+            <tr>{headingList.map((heading)=><th>{heading}</th>)}</tr>
             {
             data.map((item, index) => {
                 return (
