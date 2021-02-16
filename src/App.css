@@ -4,6 +4,9 @@
 .addMovieForm{
   margin-top: 24px;
 }
+.mainDiv{
+  margin:16px;
+}
 .inputLabel{
   padding: 8px 20px;
   margin: 4px 16px;
@@ -21,29 +24,28 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
-#movietable {
+.movietable {
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   border: 3px solid #ddd;
   width: 100%;
-  margin-right: 24px;
 }
 
-#movietable td, #movietable th {
+.movietable td, #movietable th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#movietable tr:nth-child(even){
+.movietable tr:nth-child(even){
   background-color: #f2f2f2;
 }
 
-#movietable tr:hover {
+.movietable tr:hover {
   background-color:#a0b3b6;
 }
 
-#movietable th {
+.movietable th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
@@ -51,7 +53,7 @@
   color: white;
 }
 
-#addMovieButton {
+.addMovieButton {
   background-color: #1f4c52;
   border: none;
   color: white;
@@ -61,4 +63,17 @@
   display: inline-block;
   font-size: 16px;
   margin-top: 24px;
+  border-radius: 4px;
+
 }
+.searchBar  {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background:"#F2F1F9";
+ 
+};
