@@ -8,6 +8,7 @@ function Input(props) {
         className={props.className}
         type={props.type}
         name={props.name}
+        value={props.value}
         placeholder={props.placeholder}
         onChange={(e) => props.onChange(e.target.value)}
       />

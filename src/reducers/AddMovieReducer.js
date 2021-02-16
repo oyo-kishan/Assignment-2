@@ -17,14 +17,26 @@ const MovieReducer=(state=initialState,action)=>{
                 ...state,
                 movies : [...state.movies,action.payload]
             }
+
         case "DELETE_MOVIE":
-            console.log("delete movie in reducer");
             return {
                 ...state,
                 movies : [...state.movies.filter((item)=>item.id!==action.payload)]
             }
+            
+        case "UPDATE_MOVIE":{
+            console.log("action payload in reducer")
+           const index=state.movies.findIndex((item)=>item.id===action.payload.id);
+           const copy=[...state.movies];
+           copy[index]=action.payload
+            return {
+                ...state,
+                movies:copy
+            }
+        }
         default : 
              return state;
     }
 }
+
 export default MovieReducer;

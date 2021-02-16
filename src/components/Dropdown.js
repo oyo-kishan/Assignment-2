@@ -3,16 +3,20 @@ import "../App.css";
 
 function Dropdown(props) {
   const list = props.options;
+  console.log(props.movieGenre);
   return (
     <div>
 
       <select
         className={props.className}
-        value={props.movieGenre}
+        value={props.value}
         onChange={(e) => props.onChange(e.target.value)}>
         <option value={props.title} disabled>{props.title}</option>
         {
-        list.map((option,index) => (<option key={index} value={option}>{option}</option>))
+          list.map((option,index)=>{
+            console.log(option);
+            return <option key={index} value={option}>{option}</option>
+          })
         }
       </select>
       <br />
