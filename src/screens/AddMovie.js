@@ -26,7 +26,7 @@ function AddMovie(props) {
 
 
   useEffect(()=>{
-    if(params.editable){
+    if(params!=null && params.editable){
       setMovieName(params.movieName);
       setMovieYear(params.movieYear);
       setMovieGenre(params.movieGenre);
@@ -68,7 +68,7 @@ function AddMovie(props) {
 
   const checkCallerFunction=(e)=>{
     e.preventDefault();
-    if(!params.editable){
+    if(params===null || params.editable===null || !params.editable){
       submitMovie();
       alert('Movie added to store');
     }else{
@@ -77,8 +77,8 @@ function AddMovie(props) {
     }
     history.goBack();
   }
-  
 
+  
   return (
     <form  className="addMovieForm">
       <Input 
@@ -89,7 +89,7 @@ function AddMovie(props) {
           placeholder="Movie Name" 
           onChange={(value)=>{setMovieName(value)}}
       />
-      
+
       <Input
         className="inputField"
         type="number"

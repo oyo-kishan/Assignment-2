@@ -25,7 +25,6 @@ const MovieReducer=(state=initialState,action)=>{
             }
             
         case "UPDATE_MOVIE":{
-            console.log("action payload in reducer")
            const index=state.movies.findIndex((item)=>item.id===action.payload.id);
            const copy=[...state.movies];
            copy[index]=action.payload
@@ -34,6 +33,7 @@ const MovieReducer=(state=initialState,action)=>{
                 movies:copy
             }
         }
+        
         default : 
              return state;
     }

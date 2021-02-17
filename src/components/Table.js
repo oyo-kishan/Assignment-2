@@ -17,8 +17,12 @@ function Table(props) {
                     <td>{item.genre}</td>
                     <td>{item.description}</td>
                     <td>{item.rating}</td>
-                    <td><p className="link" onClick={()=>{props.onEditClicked(item.id)}}>edit</p></td>
-                    <td><p className="link" onClick={()=>{props.onDeleteClicked(item.id)}}>delete</p></td>
+                    <td><p className="link" 
+                           onClick={()=>{props.onEditClicked(item.id)}}>edit</p>
+                    </td>
+                    <td><p className="link" 
+                           onClick={()=>{props.onDeleteClicked(item.id)}}>delete</p>
+                    </td>
                 </tr>
                 );
             })
