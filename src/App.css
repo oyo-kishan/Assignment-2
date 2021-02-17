@@ -24,7 +24,7 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
-.movietable {
+.movietable{
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -98,4 +98,18 @@
   float: left;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+#paginationbutton{
+  background-color: #1f4c52;
+  border: none;
+  color: white;
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 24px;
+  border-radius: 4px;
+  margin: 8px;
 }

@@ -7,8 +7,6 @@ import Menu from './components/Menu';
 import FetchUser from "./screens/FetchUser";
 import Pagination from "./screens/Pagination";
 
-
-
 function App() {
   return (
     <Router>
