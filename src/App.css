@@ -37,13 +37,13 @@
   padding: 8px;
 }
 
-/* .movietable tr:nth-child(even){
+.movietable tr:nth-child(even){
   background-color: #f2f2f2;
 }
 
 .movietable tr:hover {
   background-color:#a0b3b6;
-} */
+}
 
 .movietable th {
   padding-top: 12px;
