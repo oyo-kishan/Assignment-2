@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-
 import MovieTable from "./screens/MovieTable";
 import AddMovie from "./screens/AddMovie";
 import Menu from './components/Menu';
@@ -12,7 +11,6 @@ function App() {
     <Router>
       <div className="App">
         <div><Menu/></div>
-
         <Switch>
           <Route path="/" exact component={MovieTable} />
           <Route path="/addmovie" component={AddMovie} />
